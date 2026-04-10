@@ -20,7 +20,9 @@ const footerLinks = {
     { name: "About FilmU", href: "#" },
     { name: "About Fykko", href: "#" },
     { name: "Blog", href: "#" },
-    { name: "Careers", href: "#", badge: "Hiring" },
+    { name: "Careers", href: "/careers", badge: "Hiring" },
+    { name: "Submit an Idea", href: "/ideas" },
+    { name: "Design Competition", href: "/design-competition", badge: "New" },
     { name: "Contact", href: "#" },
   ],
   Legal: [
@@ -163,17 +165,62 @@ export function FooterSection() {
           </div>
         </div>
 
-        {/* Bottom Bar */}
-        <div className="py-8 border-t border-white/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-sm text-white/30">
-            &copy; 2025 FilmU & Fykko. All rights reserved.
-          </p>
+        {/* Design Credits Section */}
+        <div className="py-10 border-t border-white/10">
+          <p className="text-xs font-mono text-white/20 uppercase tracking-widest mb-6">Design &amp; Creative Credits</p>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+            {/* Sanvi Sahu — lead / most credit */}
+            <div className="col-span-2 md:col-span-2 bg-[#eca8d6]/5 border border-[#eca8d6]/15 rounded-xl p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
+                <span className="text-xs font-mono text-[#eca8d6]">Lead Visual Artist</span>
+              </div>
+              <p className="text-base font-display text-white mb-1">Sanvi Sahu</p>
+              <p className="text-xs text-white/40 leading-relaxed">
+                Home page hero artwork, bioluminescent landscape illustration, brand visual identity &amp; all key UI artwork across the platform.
+              </p>
+            </div>
 
-          <div className="flex items-center gap-4 text-sm text-white/30">
-            <span className="flex items-center gap-2">
-              <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
-              India&apos;s own LLM — Coming Soon
-            </span>
+            {/* Riya Sharma */}
+            <div className="bg-white/[0.03] border border-white/8 rounded-xl p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#67e8f9]/60" />
+                <span className="text-xs font-mono text-[#67e8f9]/70">UI Design</span>
+              </div>
+              <p className="text-sm font-display text-white mb-1">Riya Sharma</p>
+              <p className="text-xs text-white/35 leading-relaxed">Component design system, layout architecture &amp; interactive UI patterns.</p>
+            </div>
+
+            {/* Anaya Kapoor */}
+            <div className="bg-white/[0.03] border border-white/8 rounded-xl p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#a78bfa]/60" />
+                <span className="text-xs font-mono text-[#a78bfa]/70">Motion Design</span>
+              </div>
+              <p className="text-sm font-display text-white mb-1">Anaya Kapoor</p>
+              <p className="text-xs text-white/35 leading-relaxed">Animations, micro-interactions &amp; motion language across all pages.</p>
+            </div>
+
+            {/* Pranav Sinha */}
+            <div className="bg-white/[0.03] border border-white/8 rounded-xl p-5">
+              <div className="flex items-center gap-2 mb-2">
+                <span className="w-2 h-2 rounded-full bg-[#fbbf24]/60" />
+                <span className="text-xs font-mono text-[#fbbf24]/70">UX Research</span>
+              </div>
+              <p className="text-sm font-display text-white mb-1">Pranav Sinha</p>
+              <p className="text-xs text-white/35 leading-relaxed">User experience research, information architecture &amp; accessibility.</p>
+            </div>
+          </div>
+        </div>
+
+        {/* Bottom Bar */}
+        <div className="py-6 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-xs text-white/20 font-mono">
+            &copy; 2026 FilmU &amp; Fykko. All rights reserved.
+          </p>
+          <div className="flex items-center gap-3 text-xs text-white/20 font-mono">
+            <span className="w-2 h-2 rounded-full bg-[#eca8d6]" />
+            India&apos;s own LLM — Coming Soon
           </div>
         </div>
       </div>
